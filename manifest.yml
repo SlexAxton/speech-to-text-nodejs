@@ -4,12 +4,12 @@ declared-services:
     label: speech_to_text
     plan: standard
 applications:
-- name: speech-to-text-demo
+- name: jana-transcription-service
   path: .
   command: npm start
-  memory: 512M
+  memory: 1024M
   services:
-  - speech-to-text-service-standard
+  - jana-speech-to-text
   env:
     NODE_ENV: production
     SECURE_EXPRESS: 1
