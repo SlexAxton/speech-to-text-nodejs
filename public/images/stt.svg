@@ -7,25 +7,27 @@
 	.st1{fill:#562F72;}
 	.st2{fill:#FFFFFF;}
 	.st3{fill:#734098;}
+	.st4{font-family:'MyriadPro-Regular';}
+	.st5{font-size:42px;}
 </style>
-<circle class="st0" cx="-221" cy="257" r="500"/>
-<path class="st1" d="M-224.2,377c0,40.6-14.8,77.4-37.4,107.7c-19.4,25.2-83.9,113.5-135.5,159.4v-89.7h-5.2
-	c-98.1,0-176.8-79.4-176.8-177.4s80-177.4,177.4-177.4C-304.2,199.6-224.2,278.9-224.2,377L-224.2,377z"/>
-<circle class="st2" cx="-319.1" cy="372.5" r="20.6"/>
-<circle class="st2" cx="-401" cy="372.5" r="20.6"/>
-<circle class="st2" cx="-482.3" cy="372.5" r="20.6"/>
+<circle class="st0" cx="694" cy="396" r="500"/>
+<path class="st1" d="M690.8,516c0,40.6-14.8,77.4-37.4,107.7c-19.4,25.2-83.9,113.5-135.5,159.4v-89.7h-5.2
+	c-98.1,0-176.8-79.4-176.8-177.4s80-177.4,177.4-177.4C610.8,338.6,690.8,417.9,690.8,516L690.8,516z"/>
+<circle class="st2" cx="595.9" cy="511.5" r="20.6"/>
+<circle class="st2" cx="514" cy="511.5" r="20.6"/>
+<circle class="st2" cx="432.7" cy="511.5" r="20.6"/>
 <g>
-	<path class="st2" d="M-363.6,36.4l-24.5-20l42.6-52.3l-51.6-43.2l20-25.2l77.4,63.9L-363.6,36.4z"/>
-	<path class="st2" d="M-561.6,206.7c-3.2-28.4-1.3-57.4,5.2-84.5c16.8-69,63.2-126.5,127.7-158.1c23.9-11.6,50.3-19.4,76.8-22.6
-		l4.5,38.7c-22.6,2.6-44.5,9-64.5,18.7c-53.5,25.8-92.3,74.2-107.1,132.3c-5.8,23.2-7.1,47.1-4.5,71L-561.6,206.7L-561.6,206.7z"/>
+	<path class="st2" d="M551.4,175.4l-24.5-20l42.6-52.3l-51.6-43.2l20-25.2l77.4,63.9L551.4,175.4z"/>
+	<path class="st2" d="M353.4,345.7c-3.2-28.4-1.3-57.4,5.2-84.5c16.8-69,63.2-126.5,127.7-158.1c23.9-11.6,50.3-19.4,76.8-22.6
+		l4.5,38.7c-22.6,2.6-44.5,9-64.5,18.7c-53.5,25.8-92.3,74.2-107.1,132.3c-5.8,23.2-7.1,47.1-4.5,71L353.4,345.7L353.4,345.7z"/>
 </g>
 <g>
-	<path class="st2" d="M169.3,426h-431.6v-528.4h320l111.6,111L169.3,426z"/>
-	<path class="st3" d="M-192.6,45.4h304.5V97h-304.5V45.4z M-192.6,157.6H26.1v51.6h-218.7V157.6z M-192.6,264.1H79v51.6h-271.6
-		V264.1z"/>
-	<path class="st1" d="M169.3,9.9H57.1v-112.3L169.3,9.9z"/>
+	<path class="st2" d="M1084.3,565H652.7V36.6h320l111.6,111V565z"/>
+	<path class="st3" d="M722.4,184.4h304.5V236H722.4V184.4z M722.4,296.6h218.7v51.6H722.4V296.6L722.4,296.6z M722.4,403.1H994v51.6
+		H722.4V403.1z"/>
+	<path class="st1" d="M1084.3,148.9H972.1V36.6L1084.3,148.9z"/>
 </g>
-<text transform="matrix(1 -3.509886e-03 3.509886e-03 1 -186.5998 89.6268)" class="st2" style="font-family:'MyriadPro-Regular'; font-size:42px;">Janajanajnajanaj</text>
-<text transform="matrix(1 -3.509886e-03 3.509886e-03 1 -186.5995 199.5998)" class="st2" style="font-family:'MyriadPro-Regular'; font-size:42px;">Janajanajnajanaj</text>
-<text transform="matrix(1 -3.509886e-03 3.509886e-03 1 -176.5994 302.3358)" class="st2" style="font-family:'MyriadPro-Regular'; font-size:42px;">Janajanajnajanaj</text>
+<text transform="matrix(1 -3.509886e-03 3.509886e-03 1 728.4002 228.6268)" class="st2 st4 st5">Janajanajnajanaj</text>
+<text transform="matrix(1 -3.509886e-03 3.509886e-03 1 728.4005 338.5998)" class="st2 st4 st5">Janajanajnajanaj</text>
+<text transform="matrix(1 -3.509886e-03 3.509886e-03 1 738.4006 441.3358)" class="st2 st4 st5">Janajanajnajanaj</text>
 </svg>
