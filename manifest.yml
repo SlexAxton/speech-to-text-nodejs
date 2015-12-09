@@ -7,7 +7,7 @@ applications:
 - name: jana-transcription-service
   path: .
   command: npm start
-  memory: 1024M
+  memory: 2048M
   services:
   - jana-speech-to-text
   env:
