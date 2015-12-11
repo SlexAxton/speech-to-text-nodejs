@@ -33,7 +33,7 @@
     <div class="header">
       <div class="container">
         <div class="col-lg-2 col-md-2 hidden-xs hidden-sm">
-          <img src="images/jtalk.gif" height=130 width=130 class="service-icon">
+          <img src="images/jtalk.gif" height=130 width=130 style="width:130px;height:130px;" class="service-icon">
         </div><!-- .col-lg-2 -->
 
         <div class="col-lg-10 col-md-10 col-xs-12">
@@ -50,7 +50,14 @@
         <div class="col-lg-12 col-md-12 col-sm-12">
           <h2>Transcribe Audio</h2>
           <div class="col-lg-12 col-md-12 col-sm-12">
-            <p class="help-block" style="padding-right: 3em;">Use Chrome or Firefox. Upload a treated audio file from <a href="#here">here</a>. Feel free to record your voice directly too.</p>
+            <p class="help-block" style="padding-right: 3em;">Use Chrome or Firefox.</p>
+            <p class="help-block" style="padding-right: 3em;">Transcriptions only work with loud, clear mono audio, sampled at 16khz. <strong>Woah.</strong>
+            I built a thing that will take mp3s and make most of that true, tho. Upload your
+            file below and it'll pop up a link to download a .flac version that is better for
+            transcription.</p>
+            <p class="help-block" style="padding-right: 3em;">
+            <label for="converterupload">Upload your mp3:</label><input id="converterupload" type="file">
+            </p>
           </div><!-- .col-lg-8 -->
           <div class="col-lg-4 col-md-12 col-sm-12">
             <div class="opt-box" hidden>
@@ -214,5 +221,40 @@
       <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <script src="js/index.js"></script>
+      <script>
+(function($){
+  $(document).ready(function() {
+    var uploadButton = $('#converterupload');
+    uploadButton.on('change', function() {
+      uploadButton.hide();
+      var waiting = $('<span>uploading and converting... (if this takes too long it might be broken, sorry)...</span>');
+      uploadButton.after(waiting);
+      var file = uploadButton[0].files[0];
+      var fd = new FormData();
+      fd.append('file', file);
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'https://alexsexton.com:32186/upload', true);
+      xhr.onreadystatechange = function(e) {
+        if (!e || !e.currentTarget || !e.currentTarget.responseText) {
+          //alert('something is broken.');
+          return;
+        }
+
+        var response = JSON.parse(e.currentTarget.responseText);
+        if (!response || !response.filename) {
+          //alert('something is broken;')
+          return;
+        }
+
+        if (waiting.is(':visible')) {
+          waiting.hide();
+          uploadButton.after('<p><a download href="https://alexsexton.com:32186/downloads/' + encodeURI(response.filename) + '">Download Flac Version</a></p>');
+        }
+      };
+      xhr.send(fd);
+    });
+  });
+})(jQuery);
+     </script>
   </body>
 </html>
